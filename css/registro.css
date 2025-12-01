@@ -1,0 +1,104 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    font-family: Arial, sans-serif; 
+    background: #f0f0f0; 
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.container { 
+    background: white; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+    width: 100%; 
+    max-width: 400px; 
+}
+h2 { 
+    text-align: center; 
+    margin-bottom: 1.5rem; 
+    color: #333; 
+}
+input { 
+    width: 100%; 
+    padding: 12px; 
+    margin: 10px 0; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+input:focus { 
+    border-color: #4a90e2; 
+    outline: none; 
+}
+.password-container { 
+    position: relative; 
+    margin: 10px 0; 
+}
+.password-container input { 
+    padding-right: 40px; 
+}
+.toggle-icon { 
+    position: absolute; 
+    right: 12px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    cursor: pointer; 
+    font-size: 18px; 
+}
+button { 
+    width: 100%; 
+    padding: 12px; 
+    background: #4a90e2; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin: 10px 0; 
+}
+button:hover { 
+    background: #357abd; 
+}
+a { 
+    color: #4a90e2; 
+    text-decoration: none; 
+    display: block; 
+    text-align: center; 
+    margin-top: 10px; 
+}
+a:hover { 
+    text-decoration: underline; 
+}
+.intentos { 
+    text-align: center; 
+    color: #e74c3c; 
+    margin: 10px 0; 
+    font-weight: bold; 
+    background: #fceaea; 
+    padding: 8px; 
+    border-radius: 5px; 
+}
+.mensaje { 
+    margin-top: 1rem; 
+    padding: 1rem; 
+    border-radius: 5px; 
+    text-align: center; 
+    font-weight: bold; 
+    display: none; 
+}
+.mensaje.exito { 
+    background: #d4edda; 
+    color: #155724; 
+}
+.mensaje.error { 
+    background: #f8d7da; 
+    color: #721c24; 
+}
+.mensaje.bloqueado { 
+    background: #fff3cd; 
+    color: #856404; 
+}
+@media (max-width: 480px) {
+    .container { padding: 1.5rem; margin: 1rem; }
+}

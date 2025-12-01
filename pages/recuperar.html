@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar - Sistema Autenticación</title>
+    <link rel="stylesheet" href="../css/recuperar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Recuperar Contraseña</h2>
+            <form id="formRecuperar">
+                <input type="email" id="recupUsuario" placeholder="Correo electrónico" required>
+                <div class="password-container">
+                    <input type="password" id="nuevaPassInput" placeholder="Nueva contraseña" required>
+                    <span id="toggleRecup" class="toggle-icon">👁️</span>
+                </div>
+                <button type="submit">Actualizar Contraseña</button>
+            </form>
+            <p><a href="login.html">Volver al Login</a></p>
+        </div>
+        <div id="mensaje" class="mensaje"></div>
+    </div>
+    <script src="../js/recuperar.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema Autenticación</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="formLogin">
+                <input type="email" id="loginUsuario" placeholder="Correo electrónico" required>
+                <div class="password-container">
+                    <input type="password" id="loginPassInput" placeholder="Contraseña" required>
+                    <span id="toggleLogin" class="toggle-icon">👁️</span>
+                </div>
+                <div id="intentos" class="intentos">Intentos: 0/3</div>
+                <button type="submit">Iniciar Sesión</button>
+                <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+            </form>
+            <p>¿No tienes cuenta? <a href="../index.html">Crear Cuenta</a></p>
+        </div>
+        <div id="mensaje" class="mensaje"></div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

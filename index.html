@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Sistema Autenticación</title>
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Crear Cuenta</h2>
+            <form id="formRegistro">
+                <input type="text" id="nombre" placeholder="Nombre completo" required>
+                <input type="email" id="usuario" placeholder="Correo electrónico" required>
+                <input type="tel" id="celular" placeholder="Número móvil" required>
+                <div class="password-container">
+                    <input type="password" id="passRegistroInput" placeholder="Contraseña segura" required>
+                    <span id="toggleRegistro" class="toggle-icon">👁️</span>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+            <p>¿Ya tienes cuenta? <a href="pages/login.html">Iniciar Sesión</a></p>
+        </div>
+        <div id="mensaje" class="mensaje"></div>
+    </div>
+    <script src="js/registro.js"></script>
+</body>
+</html>
